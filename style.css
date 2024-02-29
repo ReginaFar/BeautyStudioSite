@@ -1,0 +1,757 @@
+@import "https://fonts.fontstorage.com/import/americantext.css";
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(img/background.jpg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.center {
+  padding-left: calc(50% - 640px);
+  padding-right: calc(50% - 640px);
+}
+
+.header {
+  height: 154px;
+}
+.header__menu {
+  margin-top: 50px;
+  height: 104px;
+  border-radius: 32px;
+  background: #959391;
+  background-color: rgba(42, 39, 34, 0.5019607843);
+  color: #fff6ef;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__menu__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 38%;
+}
+.header__menu__logo {
+  width: 150px;
+}
+.header__menu__right {
+  width: 44%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 16px;
+  align-items: center;
+}
+.header__menu__contacts {
+  margin-right: 5%;
+}
+.header__menu__contacts:hover {
+  color: #8E623C;
+}
+.header__menu__logovk {
+  margin-left: 4%;
+  margin-right: 2%;
+}
+.header__menu__nav:hover {
+  color: #8E623C;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown__btn {
+  border: none;
+}
+.dropdown__btn:hover {
+  color: #8E623C;
+}
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #8E623C;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 5px;
+}
+.dropdown__content a {
+  color: #fff6ef;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown__content a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+.top__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.top__left__heading {
+  color: #fff6ef;
+  font-family: "American TextC";
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.top__left__heading__yellow {
+  color: #8E623C;
+}
+.top__left__button {
+  width: 274px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: "American TextC";
+  font-size: 30px;
+  background-color: #8E623C;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.top__left__button:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.top__left__button:active {
+  color: #8E623C;
+}
+.top__left__button:active:after {
+  background: transparent;
+}
+.top__left__button:hover:before {
+  opacity: 1;
+}
+.top__left__button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #8E623C;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.top__left__worktime {
+  margin-top: 50px;
+  display: flex;
+  gap: 13px;
+}
+.top__left__worktime__icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #8E623C;
+}
+.top__left__worktime__info {
+  color: #8E623C;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.36px;
+}
+.top__left__worktime__info__white {
+  color: #fff6ef;
+}
+
+.main__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.main__logo__info {
+  font-family: "American TextC";
+  color: #fff6ef;
+  font-size: 50px;
+}
+.main__logo__info.reveal {
+  position: relative;
+  transform: translateX(-1000px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.main__logo__svg.reveal {
+  position: relative;
+  transform: translateX(1000px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.piercing {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.piercing__right {
+  width: 43%;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.piercing__img {
+  width: 100%;
+}
+.piercing__left {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 25px;
+  color: #fff6ef;
+  width: 50%;
+}
+.piercing__left__additional {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.piercing__title {
+  font-family: "American TextC";
+  font-size: 50px;
+  color: #8E623C;
+}
+.piercing__info {
+  margin-top: 10px;
+  display: flex;
+  gap: 70px;
+}
+.piercing__price {
+  width: 22%;
+  color: #8E623C;
+}
+.piercing__price__two {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.piercing__price__four {
+  margin-top: 79px;
+  margin-bottom: 79px;
+}
+.piercing__description__one {
+  margin-top: 15px;
+}
+.piercing__description__two {
+  margin-bottom: 15px;
+}
+
+.line {
+  border-left: #fff6ef solid 3px;
+  height: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.divide-line img {
+  width: 100%;
+}
+
+.hair-extension {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.hair-extension__left {
+  width: 50%;
+}
+.hair-extension__left__img {
+  width: 100%;
+  height: 570px;
+}
+.hair-extension__right {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 25px;
+  color: #fff6ef;
+}
+.hair-extension__info {
+  margin-top: 10px;
+  display: flex;
+  gap: 70px;
+}
+.hair-extension__price {
+  color: #8E623C;
+  width: 40%;
+}
+.hair-extension__price__third {
+  padding-top: 15px;
+}
+.hair-extension__price__fourth {
+  padding-top: 20px;
+}
+.hair-extension__price li {
+  margin-top: 15px;
+}
+.hair-extension__description li {
+  margin-top: 15px;
+}
+
+.hair-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  padding-bottom: 55px !important;
+  height: 350px;
+}
+.swiper .swiper-wrapper {
+  align-items: center;
+}
+.swiper .swiper-slide {
+  border-radius: 5px;
+  height: 250px !important;
+  background-color: #000;
+  border: 1px solid #FFF;
+  transition: 0.2s;
+}
+.swiper .swiper-slide.active {
+  height: 300px !important;
+}
+.swiper .prev, .swiper .next {
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.65;
+  transition: 0.2s;
+}
+.swiper .prev:hover, .swiper .next:hover {
+  opacity: 1;
+}
+.swiper .prev svg, .swiper .next svg {
+  width: 20px;
+  height: 20px;
+}
+.swiper .prev svg path, .swiper .next svg path {
+  fill: #FFF;
+}
+.swiper .prev {
+  left: 25px;
+}
+.swiper .next {
+  right: 25px;
+}
+.swiper .pagination {
+  margin-left: 8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  z-index: 100;
+}
+.swiper .pagination span {
+  font-size: 0;
+  opacity: 1;
+  margin: 0px 6px !important;
+  border: 1px solid #FFF;
+}
+.swiper .pagination span.swiper-pagination-bullet-active {
+  background-color: transparent;
+  transform: scale(1.5);
+}
+
+.sign_up-button {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tatoo {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.tatoo__bottom {
+  font-size: 18px;
+  margin-top: 100px;
+}
+.tatoo__description {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.tatoo__right {
+  margin-top: 20px;
+  height: 700px;
+  position: relative;
+}
+.tatoo__right__img {
+  width: 100%;
+}
+.tatoo__left {
+  padding-top: 50px;
+}
+.tatoo__slider {
+  margin-left: 50px;
+}
+
+.previous-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 300px;
+  left: 0px;
+}
+
+.next-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 300px;
+  right: -50px;
+}
+
+.hair-lamination {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.hair-lamination__left {
+  width: 50%;
+}
+.hair-lamination__left__img {
+  width: 100%;
+  height: 500px;
+}
+.hair-lamination__right {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 25px;
+  color: #fff6ef;
+}
+.hair-lamination__info {
+  display: flex;
+  gap: 70px;
+}
+.hair-lamination__price {
+  padding-top: 20px;
+  color: #8E623C;
+  width: 40%;
+  line-height: 60px;
+}
+
+.teaching {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.teaching__img {
+  width: 100%;
+  position: relative;
+}
+.teaching__description {
+  font-size: 25px;
+  margin-top: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.teaching__title {
+  font-family: "American TextC";
+  font-size: 60px;
+  color: #8E623C;
+}
+.teaching__info {
+  margin-top: 30px;
+  position: absolute;
+  left: 250px;
+}
+.teaching__line {
+  border-left: #000 solid 3px;
+  height: auto;
+}
+.teaching__button {
+  text-align: start;
+}
+
+.feedback {
+  margin-top: 100px;
+}
+.feedback__title {
+  font-family: "American TextC";
+  font-size: 60px;
+  color: #8E623C;
+}
+.feedback__img {
+  width: 100%;
+}
+.feedback__imgs {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 300px);
+}
+
+.logo__mooving {
+  overflow: hidden;
+  padding-bottom: 100px;
+  width: 100%;
+  white-space: nowrap;
+  display: block;
+}
+.logo__mooving__box {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 20s infinite linear;
+}
+.logo__mooving__svg {
+  margin-right: 200px;
+}
+
+.studio__photo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.studio__photo__1 {
+  width: 49%;
+}
+.studio__photo__2 {
+  width: 49%;
+}
+.studio__photo__3 {
+  width: 33%;
+}
+.studio__photo__4 {
+  width: 32%;
+}
+.studio__photo__5 {
+  width: 32%;
+}
+
+.footer {
+  min-height: 530px;
+  padding-top: 100px;
+}
+.footer__box {
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+}
+.footer__left__title {
+  font-family: "American TextC";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #8E623C;
+  margin-bottom: 40px;
+}
+.footer__left__contacts {
+  color: #fff6ef;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+.footer__left__svg {
+  margin-top: 40px;
+}
+.footer__bottom {
+  color: #fff6ef;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sign-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+}
+.sign-up__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #FFF;
+  width: 1000px;
+  height: 400px;
+  padding: 25px;
+  transition: 0.5s all;
+}
+.sign-up__window__title {
+  font-family: "American TextC";
+  color: #000;
+  font-size: 45px;
+  margin-left: 200px;
+  margin-right: 140px;
+}
+.sign-up__window__box {
+  display: flex;
+  flex-direction: row;
+}
+.sign-up__window__close {
+  width: 50px;
+  cursor: pointer;
+}
+.sign-up__window__buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 200px;
+}
+.sign-up__window__button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  color: #000;
+  border: #000 solid 1px;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up__window__button:hover {
+  border: #fff6ef;
+}
+.sign-up__window__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sign-up__window.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+.sign-up__bottom {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.sign-up__bottom__text {
+  font-family: "American TextC";
+  color: #000;
+  font-size: 45px;
+}
+.sign-up__bottom__logo {
+  width: 100px;
+}
+
+.sign-up.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}/*# sourceMappingURL=style.css.map */
