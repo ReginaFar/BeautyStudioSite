@@ -60,8 +60,7 @@ ul {
   margin-top: 50px;
   height: 104px;
   border-radius: 32px;
-  background: #959391;
-  background-color: rgba(42, 39, 34, 0.5019607843);
+  background-color: #2A2722;
   color: #fff6ef;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
@@ -397,37 +396,10 @@ ul {
 .swiper .swiper-slide {
   border-radius: 5px;
   height: 250px !important;
-  background-color: #000;
-  border: 1px solid #FFF;
   transition: 0.2s;
 }
 .swiper .swiper-slide.active {
   height: 300px !important;
-}
-.swiper .prev, .swiper .next {
-  cursor: pointer;
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.65;
-  transition: 0.2s;
-}
-.swiper .prev:hover, .swiper .next:hover {
-  opacity: 1;
-}
-.swiper .prev svg, .swiper .next svg {
-  width: 20px;
-  height: 20px;
-}
-.swiper .prev svg path, .swiper .next svg path {
-  fill: #FFF;
-}
-.swiper .prev {
-  left: 25px;
-}
-.swiper .next {
-  right: 25px;
 }
 .swiper .pagination {
   margin-left: 8px !important;

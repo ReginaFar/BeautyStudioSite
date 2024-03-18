@@ -5,10 +5,6 @@ const swiper = new Swiper(".swiper", {
     grabCursor: true,
     centeredSlides: true,
     slideActiveClass: "active",
-    navigation: {
-        nextEl: ".next",
-        prevEl: ".prev"
-    },
     pagination: {
         el: ".pagination",
         clickable: true
