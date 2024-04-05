@@ -1032,7 +1032,7 @@ ul {
     text-align: center;
   }
   .dropdown {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
   .dropdown__btn {
     padding-top: 11px;
