@@ -55,7 +55,7 @@ ul{
         margin-top:50px;
         height:104px;
         border-radius: 32px;
-        background:rgba(42, 39, 34, 0.5);;
+        background-color:rgba(42, 39, 34, 0.5);
         color: $colorLightText;
         font-family: $fontSmall;
         font-size: 18px;
@@ -409,10 +409,10 @@ ul{
 
 .sign_up-button{
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .tatoo{
+    margin-top: 50px;
     margin-bottom: 50px;
     @include rowFlex();
     &__bottom{
@@ -535,6 +535,7 @@ ul{
 }
 
 .logo__mooving{
+    margin-top: 100px;
     overflow: hidden;
     padding-bottom: 100px;
     width: 100%;
@@ -613,6 +614,16 @@ ul{
         text-transform: uppercase;
         text-align: center;
         margin-top: 50px;
+    }
+    &__right{
+        width:100%;
+        &__map{
+            &__iframe{
+                width:650px;
+                height:400px;
+                position:relative;
+            }
+        }
     }
 }
 
@@ -700,3 +711,550 @@ ul{
     pointer-events: all;
     transition: 0.5s all;
 }
+
+@media (min-width:768px) and (max-width:1024px) {
+    .center{
+        padding: 3% 2% 0;
+    }
+    .header{
+        height:100px;
+        &__menu{
+            margin-top: 0px;
+            font-size: 13px;
+            height:90px;
+            &__left{
+                padding-left: 3%;
+                padding-right: 2%;
+            }
+            &__logo{
+                width:100px;
+            }
+            &__right{
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 12px;
+            }
+            &__contacts{
+                margin-left: 5px;
+               
+            }
+            &__logovk svg{
+                margin:5%;
+                width:25px;
+            }
+            &__nav{
+                padding:10px 10px;
+            }
+        }
+    }
+    .dropdown{
+        &__btn{
+            padding-top: 11px;
+            font-size: 12px;
+        }
+        &__btn svg{
+           height: 12px;
+        }
+        &__content{
+            min-width: 130px;
+        }
+    }
+ 
+    .top{
+        &__left{
+            width: 45%;
+            margin-top: 0px;
+            &__heading{   
+                font-size: 50px;          
+            }
+            &__button{
+                font-size: 25px;
+                margin-top:20px;
+            }
+            &__worktime{
+                margin-top: 20px;
+                &__icon{
+                    width: 45px;
+                    height: 45px;
+                }
+                &__info{
+                    font-size: 16px;
+                }
+            }
+        }
+        &__right img{
+            width:100%;
+        }
+        &__right{
+            width:55%;
+        }
+    }
+
+    .sign-up{
+        &__window{
+            height:420px;
+            &__title{
+                font-size: 38px;
+                margin-left: 220px;
+                margin-right: 130px;
+            }
+        }
+        &__window.active{
+            width:90%;
+        }
+        &__bottom{
+            &__text{
+                font-size: 38px;
+            }
+        }
+    }
+
+    .piercing{
+        &__right{
+            width: 50%;
+            margin-left: 0px;
+        }
+        &__left{
+            font-size: 15px;
+            &__additional{
+                font-size: 15px;
+            }
+        }
+        &__info{
+            gap:30px;
+        }
+        &__price{
+            width:24%;
+            &__two{
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            &__four{
+                margin-top: 55px;
+                margin-bottom: 53px;
+            }
+        }
+    }
+
+    .hair-extension{
+        gap:20px;
+        margin-top: 0px;
+        &__left{
+            margin-top: 20px;
+            width:50%;
+            &__img{
+                height:430px;
+            }
+        }
+        &__right{
+            width:50%;
+            font-size: 15px;
+        }
+        &__info{
+            gap:30px;
+        }
+        &__price{
+            width:45%;
+            &__third{
+                padding-top: 10px;
+            }
+            &__fourth{
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .swiper {
+        padding-bottom: 55px !important;
+        height: 250px;
+        .swiper-wrapper {
+          align-items: center;
+        }
+        .swiper-slide {
+          height: 180px !important;
+          &.active {
+            height: 200px !important;
+            width: 230px !important;
+          }
+        }
+    }
+
+    .tatoo{
+        margin-top: 0px;
+        gap:40px;
+        &__bottom{
+            font-size: 16px;
+        }
+        &__description{
+            font-size: 16px;
+        }
+        &__right{
+            margin-top: 20px;
+            height:500px;
+        }
+        &__left{
+            width:60%;
+            padding-top: 30px;
+        }
+        &__slider{
+            margin-left: 0px;
+        }
+    }
+
+    .previous-arrow{
+        top:200px;
+        left:0px;
+    }
+
+    .next-arrow{
+        top:200px;
+        right:0px;
+    }
+
+    .hair-lamination{
+        gap:30px;
+        &__left{
+            margin-top: 20px;
+            width:46%;
+            &__img{
+                height:100%;
+            }
+        }
+        &__right{
+            width:54%;
+            font-size: 15px;
+        }
+        &__info{
+            gap:30px;
+        }
+        &__price{
+            padding-top: 8px;
+            width:22%;
+            line-height: 34px;
+        }
+      
+    }
+
+    .teaching{
+        margin-top:30px;
+        margin-bottom: 30px;
+        &__description{
+            font-size: 17px;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__info{
+            margin-top: 10px;
+            left:70px;
+        }
+    }
+    
+    .feedback{
+        margin-top:0px;
+        &__title{
+            text-align: center;
+            font-size: 50px;
+        }
+        &__imgs{
+            grid-template-columns: repeat(2,40%);
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    .logo__mooving{
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer{
+        min-height: 450px;
+        margin-top: 50px;
+        &__box{
+            gap:10%;
+        }
+        &__left{
+            width:30%;
+            &__contacts{
+                font-size: 15px;
+            }
+        }
+        &__bottom{
+            font-size: 15px;
+        }
+        &__right{
+            width:70%;
+            &__map{
+                &__iframe{
+                    width:100%;
+                    height:350px;
+                }
+            }
+        }
+      
+    } 
+}
+
+@media (min-width:375px) and (max-width:767px) {
+    .center{
+        padding: 3% 2% 0;
+    }
+
+    .header{
+        height:80px;
+        &__menu{
+            margin-top: 0px;
+            font-size: 9px;
+            height:70px;
+            &__left{
+                padding-left: 30px;
+                padding-right: 20px;
+            }
+            &__logo{
+                width:90px;
+            }
+            &__center{
+                padding-right: 0px;
+            }
+            &__right{
+                margin-left: 0px;
+                font-size: 10px;
+            }
+            &__right :nth-child(3){
+                display:none;
+            }
+            &__logovk svg{
+                display: none;
+            }
+            &__nav{
+                display:none;
+            }
+            &__contacts{
+                text-align: center;
+            }
+        }
+    }
+    .dropdown{
+        &__btn{
+            padding-top: 11px;
+            font-size: 12px;
+            
+        }
+        &__btn svg{
+           height: 12px;
+        }
+        &__content{
+            min-width: 130px;
+        }
+    }
+
+    .piercing{
+        &__title{
+            font-size: 30px;
+        }
+        &__right{
+            width: 50%;
+            margin-left: 0px;
+        }
+        &__left{
+            font-size: 15px;
+            &__additional{
+                font-size: 15px;
+            }
+        }
+        &__info{
+            gap:30px;
+        }
+        &__price{
+            width:24%;
+            &__two{
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            &__four{
+                margin-top: 55px;
+                margin-bottom: 53px;
+            }
+        }
+    }
+
+
+    .feedback{
+        margin-top:0px;
+        &__title{
+            text-align: center;
+            font-size: 50px;
+        }
+        &__imgs{
+            grid-template-columns: repeat(2,40%);
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+    .tatoo{
+        margin-top: 0px;
+        gap:40px;
+        &__bottom{
+            font-size: 16px;
+        }
+        &__description{
+            font-size: 16px;
+        }
+        &__right{
+            margin-top: 20px;
+            height:300px;
+            width:50%;
+        }
+        &__left{
+            width:40%;
+            padding-top: 30px;
+        }
+        &__slider{
+            margin-left: 0px;
+        }
+    }
+
+    .previous-arrow{
+        top:200px;
+        left:0px;
+    }
+
+    .next-arrow{
+        top:200px;
+        right:100px;
+    }
+
+    .footer{
+        min-height: 450px;
+        margin-top: 50px;
+        &__box{
+            gap:10%;
+        }
+        &__left{
+            width:30%;
+            &__contacts{
+                font-size: 15px;
+            }
+        }
+        &__bottom{
+            font-size: 15px;
+        }
+        &__right{
+            width:70%;
+            &__map{
+                &__iframe{
+                    width:100%;
+                    height:350px;
+                }
+            }
+        }
+      
+    } 
+
+    .top{
+        &__left{
+            width: 45%;
+            margin-top: 0px;
+            &__heading{   
+                font-size: 50px;          
+            }
+            &__button{
+                font-size: 25px;
+                margin-top:20px;
+                width:100px;
+            }
+            &__worktime{
+                margin-top: 20px;
+                &__icon{
+                    width: 45px;
+                    height: 45px;
+                }
+                &__info{
+                    font-size: 16px;
+                }
+            }
+        }
+        &__right img{
+            width:100%;
+        }
+        &__right{
+            width:55%;
+        }
+    }
+
+    .teaching{
+        margin-top:30px;
+        margin-bottom: 30px;
+        &__description{
+            font-size: 17px;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__info{
+            margin-top: 10px;
+            left:70px;
+        }
+    }
+
+    .hair-lamination{
+        gap:30px;
+        &__left{
+            margin-top: 20px;
+            width:46%;
+            &__img{
+                height:100%;
+            }
+        }
+        &__right{
+            width:54%;
+            font-size: 15px;
+        }
+        &__info{
+            gap:30px;
+        }
+        &__price{
+            padding-top: 8px;
+            width:22%;
+            line-height: 34px;
+        }
+      
+    }
+
+    
+    .hair-extension{
+        gap:20px;
+        margin-top: 0px;
+        &__left{
+            margin-top: 20px;
+            width:50%;
+            &__img{
+                height:430px;
+            }
+        }
+        &__right{
+            width:50%;
+            font-size: 10px;
+        }
+        &__info{
+            gap:30px;
+        }
+        &__price{
+            width:45%;
+            &__third{
+                padding-top: 10px;
+            }
+            &__fourth{
+                padding-top: 10px;
+            }
+        }
+    }
+
+    
+   
+
+    
+}
+  
+
