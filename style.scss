@@ -736,6 +736,7 @@ ul{
             }
             &__contacts{
                 margin-left: 5px;
+                text-align: center;
                
             }
             &__logovk svg{
@@ -1005,11 +1006,11 @@ ul{
         height:80px;
         &__menu{
             margin-top: 0px;
-            font-size: 9px;
+            font-size: 10px;
             height:70px;
             &__left{
-                padding-left: 30px;
-                padding-right: 20px;
+                padding-left: 40px;
+                padding-right: 0px;
             }
             &__logo{
                 width:90px;
@@ -1019,7 +1020,7 @@ ul{
             }
             &__right{
                 margin-left: 0px;
-                font-size: 10px;
+                font-size: 13px;
             }
             &__right :nth-child(3){
                 display:none;
@@ -1036,9 +1037,10 @@ ul{
         }
     }
     .dropdown{
+        padding-bottom: 10px;
         &__btn{
             padding-top: 11px;
-            font-size: 12px;
+            font-size: 14px;
             
         }
         &__btn svg{

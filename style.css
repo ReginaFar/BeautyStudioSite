@@ -763,6 +763,7 @@ ul {
   }
   .header__menu__contacts {
     margin-left: 5px;
+    text-align: center;
   }
   .header__menu__logovk svg {
     margin: 5%;
@@ -1001,12 +1002,12 @@ ul {
   }
   .header__menu {
     margin-top: 0px;
-    font-size: 9px;
+    font-size: 10px;
     height: 70px;
   }
   .header__menu__left {
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 0px;
   }
   .header__menu__logo {
     width: 90px;
@@ -1016,7 +1017,7 @@ ul {
   }
   .header__menu__right {
     margin-left: 0px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .header__menu__right :nth-child(3) {
     display: none;
@@ -1030,9 +1031,12 @@ ul {
   .header__menu__contacts {
     text-align: center;
   }
+  .dropdown {
+    padding-bottom: 10px;
+  }
   .dropdown__btn {
     padding-top: 11px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .dropdown__btn svg {
     height: 12px;
