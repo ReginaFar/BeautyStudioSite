@@ -1035,14 +1035,93 @@ ul {
     padding-bottom: 0px;
   }
   .dropdown__btn {
-    padding-top: 11px;
+    padding-top: 5px;
     font-size: 14px;
   }
   .dropdown__btn svg {
     height: 12px;
   }
   .dropdown__content {
+    font-size: 12px;
     min-width: 130px;
+  }
+  .top {
+    flex-direction: column;
+  }
+  .top__left {
+    margin-bottom: 30px;
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    align-items: center;
+  }
+  .top__left__heading {
+    font-size: 50px;
+  }
+  .top__left__button {
+    font-size: 25px;
+    margin-top: 20px;
+    width: 200px;
+  }
+  .top__left__worktime {
+    margin-top: 20px;
+  }
+  .top__left__worktime__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .top__left__worktime__info {
+    font-size: 15px;
+  }
+  .top__right img {
+    width: 100%;
+  }
+  .main__logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main__logo__info {
+    font-size: 34px;
+  }
+  .main__logo__svg {
+    width: 150px;
+  }
+  .sign-up__window {
+    width: 300px;
+    height: 320px;
+  }
+  .sign-up__window__title {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+  .sign-up__window__close {
+    width: 30px;
+    margin-bottom: 30px;
+  }
+  .sign-up__window__buttons {
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+    height: 180px;
+  }
+  .sign-up__window__button {
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
+  }
+  .sign-up__window__link {
+    gap: 5px;
+  }
+  .sign-up__bottom {
+    margin-top: 0px;
+  }
+  .sign-up__bottom__text {
+    font-size: 30px;
+  }
+  .sign-up__bottom__logo {
+    width: 100px;
   }
   .piercing__title {
     font-size: 30px;
@@ -1136,34 +1215,6 @@ ul {
     width: 100%;
     height: 350px;
   }
-  .top__left {
-    width: 45%;
-    margin-top: 0px;
-  }
-  .top__left__heading {
-    font-size: 50px;
-  }
-  .top__left__button {
-    font-size: 25px;
-    margin-top: 20px;
-    width: 100px;
-  }
-  .top__left__worktime {
-    margin-top: 20px;
-  }
-  .top__left__worktime__icon {
-    width: 45px;
-    height: 45px;
-  }
-  .top__left__worktime__info {
-    font-size: 16px;
-  }
-  .top__right img {
-    width: 100%;
-  }
-  .top__right {
-    width: 55%;
-  }
   .teaching {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1183,13 +1234,13 @@ ul {
   }
   .hair-lamination__left {
     margin-top: 20px;
-    width: 46%;
+    width: 30%;
   }
   .hair-lamination__left__img {
     height: 100%;
   }
   .hair-lamination__right {
-    width: 54%;
+    width: 30%;
     font-size: 15px;
   }
   .hair-lamination__info {
@@ -1206,13 +1257,13 @@ ul {
   }
   .hair-extension__left {
     margin-top: 20px;
-    width: 50%;
+    width: 40%;
   }
   .hair-extension__left__img {
     height: 430px;
   }
   .hair-extension__right {
-    width: 50%;
+    width: 40%;
     font-size: 10px;
   }
   .hair-extension__info {

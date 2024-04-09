@@ -1036,10 +1036,11 @@ ul{
             }
         }
     }
+
     .dropdown{
         padding-bottom: 0px;
         &__btn{
-            padding-top: 11px;
+            padding-top: 5px;
             font-size: 14px;
             
         }
@@ -1047,9 +1048,97 @@ ul{
            height: 12px;
         }
         &__content{
+            font-size: 12px;
             min-width: 130px;
         }
     }
+
+    .top{
+        flex-direction: column;
+        &__left{
+            margin-bottom: 30px;
+            width: 100%;
+            margin-top: 0px;
+            text-align: center;
+            align-items: center;
+            &__heading{   
+                font-size: 50px;          
+            }
+            &__button{
+                font-size: 25px;
+                margin-top:20px;
+                width:200px;
+            }
+            &__worktime{
+                margin-top: 20px;
+                &__icon{
+                    width: 40px;
+                    height: 40px;
+                }
+                &__info{
+                    font-size: 15px;
+                }
+            }
+        }
+        &__right img{
+            width:100%;
+        }
+        
+    }
+
+    .main__logo{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__info{
+            font-size: 34px;
+        }
+        &__svg{
+            width:150px;
+        }
+    }
+
+    .sign-up{
+        &__window{
+            width:300px;
+            height:320px;
+            &__title{
+                text-align: center;
+                font-size: 25px;
+                margin-left: 10px;
+                margin-right: 13px;
+            }
+            &__close{
+                width:30px;
+                margin-bottom: 30px;
+            }
+            &__buttons{
+                margin-top: 20px;
+                text-align: center;
+                margin-top: 0px;
+                height: 180px;
+            }
+            &__button{
+                font-size: 13px;
+                width:150px;
+                height:40px;
+            }
+            &__link{
+                gap:5px;
+            }
+        }
+        &__bottom{
+            margin-top: 0px;
+            &__text{
+                font-size: 30px;
+            }
+            &__logo{
+                width:100px;
+            }
+        }
+    }
+
+
+
 
     .piercing{
         &__title{
@@ -1154,36 +1243,7 @@ ul{
       
     } 
 
-    .top{
-        &__left{
-            width: 45%;
-            margin-top: 0px;
-            &__heading{   
-                font-size: 50px;          
-            }
-            &__button{
-                font-size: 25px;
-                margin-top:20px;
-                width:100px;
-            }
-            &__worktime{
-                margin-top: 20px;
-                &__icon{
-                    width: 45px;
-                    height: 45px;
-                }
-                &__info{
-                    font-size: 16px;
-                }
-            }
-        }
-        &__right img{
-            width:100%;
-        }
-        &__right{
-            width:55%;
-        }
-    }
+  
 
     .teaching{
         margin-top:30px;
@@ -1204,13 +1264,13 @@ ul{
         gap:30px;
         &__left{
             margin-top: 20px;
-            width:46%;
+            width:30%;
             &__img{
                 height:100%;
             }
         }
         &__right{
-            width:54%;
+            width:30%;
             font-size: 15px;
         }
         &__info{
@@ -1230,13 +1290,13 @@ ul{
         margin-top: 0px;
         &__left{
             margin-top: 20px;
-            width:50%;
+            width:40%;
             &__img{
                 height:430px;
             }
         }
         &__right{
-            width:50%;
+            width:40%;
             font-size: 10px;
         }
         &__info{
