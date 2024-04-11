@@ -1147,7 +1147,7 @@ ul {
     margin-bottom: 20px;
   }
   .piercing__price {
-    width: 25%;
+    width: 35%;
   }
   .piercing__price__two {
     margin-top: 25px;
@@ -1172,7 +1172,7 @@ ul {
     gap: 20px;
   }
   .hair-extension__price {
-    width: 30%;
+    width: 44%;
   }
   .hair-extension__price__third {
     padding-top: 10px;
@@ -1181,18 +1181,39 @@ ul {
     padding-top: 10px;
   }
   .swiper {
-    padding-bottom: 55px !important;
     height: 250px;
   }
   .swiper .swiper-wrapper {
     align-items: center;
   }
   .swiper .swiper-slide {
-    height: 180px !important;
+    border-radius: 5px;
+    height: 100px !important;
+    transition: 0.2s;
+    margin-right: 10px !important;
+    margin-left: 22px !important;
   }
   .swiper .swiper-slide.active {
-    height: 200px !important;
-    width: 230px !important;
+    height: 250px !important;
+    width: 250px !important;
+  }
+  .swiper .pagination {
+    margin-left: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 100;
+  }
+  .swiper .pagination span {
+    font-size: 0;
+    opacity: 1;
+    margin: 0px 6px !important;
+    border: 1px solid #FFF;
+  }
+  .swiper .pagination span.swiper-pagination-bullet-active {
+    background-color: transparent;
+    transform: scale(1.5);
   }
   .feedback {
     margin-top: 0px;
@@ -1277,11 +1298,7 @@ ul {
     gap: 30px;
   }
   .hair-lamination__left {
-    margin-top: 20px;
-    width: 30%;
-  }
-  .hair-lamination__left__img {
-    height: 100%;
+    display: none;
   }
   .hair-lamination__right {
     width: 30%;

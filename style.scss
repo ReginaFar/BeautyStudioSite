@@ -1159,7 +1159,7 @@ ul{
             margin-bottom: 20px;
         }
         &__price{
-            width:25%;
+            width:35%;
             &__two{
                 margin-top: 25px;
                 margin-bottom: 27px;
@@ -1185,7 +1185,7 @@ ul{
             gap:20px;
         }
         &__price{
-            width:30%;
+            width:44%;
             &__third{
                 padding-top: 10px;
             }
@@ -1196,19 +1196,40 @@ ul{
     }
 
     .swiper {
-        padding-bottom: 55px !important;
         height: 250px;
         .swiper-wrapper {
           align-items: center;
         }
         .swiper-slide {
-          height: 180px !important;
+          border-radius: 5px;
+          height: 100px !important;
+          transition: 0.2s;
+          margin-right: 10px !important;
+          margin-left:22px !important;
           &.active {
-            height: 200px !important;
-            width: 230px !important;
+            height: 250px !important;
+            width: 250px !important;
+          }
+        }
+        .pagination {
+          margin-left: 8px !important;
+          @include centerFlex();
+          margin-top: 40px;
+          z-index: 100;
+          span {
+            font-size: 0;
+            opacity: 1;
+            margin: 0px 6px !important;
+            border: 1px solid $colorWhiteText;
+            &.swiper-pagination-bullet-active {
+              background-color: transparent;
+              transform: scale(1.5);
+            }
           }
         }
     }
+
+   
 
 
 
@@ -1306,11 +1327,7 @@ ul{
     .hair-lamination{
         gap:30px;
         &__left{
-            margin-top: 20px;
-            width:30%;
-            &__img{
-                height:100%;
-            }
+            display: none;
         }
         &__right{
             width:30%;
