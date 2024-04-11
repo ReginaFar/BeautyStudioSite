@@ -1087,7 +1087,7 @@ ul {
     width: 150px;
   }
   .sign-up__window {
-    width: 300px;
+    width: 320px;
     height: 320px;
   }
   .sign-up__window__title {
@@ -1123,32 +1123,76 @@ ul {
   .sign-up__bottom__logo {
     width: 100px;
   }
-  .piercing__title {
-    font-size: 30px;
+  .piercing {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
   }
   .piercing__right {
-    width: 50%;
+    width: 100%;
+    margin-top: 30px;
     margin-left: 0px;
   }
   .piercing__left {
-    font-size: 15px;
+    font-size: 16px;
+    width: 100%;
   }
   .piercing__left__additional {
-    font-size: 15px;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
   .piercing__info {
-    gap: 30px;
+    gap: 50px;
+    margin-bottom: 20px;
   }
   .piercing__price {
-    width: 24%;
+    width: 25%;
   }
   .piercing__price__two {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
   .piercing__price__four {
-    margin-top: 55px;
-    margin-bottom: 53px;
+    margin-top: 58px;
+    margin-bottom: 57px;
+  }
+  .hair-extension {
+    margin-top: 0px;
+    gap: 0px;
+  }
+  .hair-extension__left {
+    display: none;
+  }
+  .hair-extension__right {
+    font-size: 16px;
+  }
+  .hair-extension__info {
+    margin-top: 0px;
+    gap: 20px;
+  }
+  .hair-extension__price {
+    width: 30%;
+  }
+  .hair-extension__price__third {
+    padding-top: 10px;
+  }
+  .hair-extension__price__fourth {
+    padding-top: 10px;
+  }
+  .swiper {
+    padding-bottom: 55px !important;
+    height: 250px;
+  }
+  .swiper .swiper-wrapper {
+    align-items: center;
+  }
+  .swiper .swiper-slide {
+    height: 180px !important;
+  }
+  .swiper .swiper-slide.active {
+    height: 200px !important;
+    width: 230px !important;
   }
   .feedback {
     margin-top: 0px;
@@ -1250,32 +1294,5 @@ ul {
     padding-top: 8px;
     width: 22%;
     line-height: 34px;
-  }
-  .hair-extension {
-    gap: 20px;
-    margin-top: 0px;
-  }
-  .hair-extension__left {
-    margin-top: 20px;
-    width: 40%;
-  }
-  .hair-extension__left__img {
-    height: 430px;
-  }
-  .hair-extension__right {
-    width: 40%;
-    font-size: 10px;
-  }
-  .hair-extension__info {
-    gap: 30px;
-  }
-  .hair-extension__price {
-    width: 45%;
-  }
-  .hair-extension__price__third {
-    padding-top: 10px;
-  }
-  .hair-extension__price__fourth {
-    padding-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
