@@ -1,4 +1,4 @@
-const photos = ["tatoo1", "tatoo2", "tatoo4", "tatoo5","tatoo6", "tatoo7", "tatoo8", "tatoo9", "tatoo10"];
+const photos = ["tatoo1", "tatoo2", "tatoo4", "tatoo5","tatoo6", "tatoo7", "tatoo8", "tatoo9", "tatoo10", "tatoo11"];
 const previousButton = document.querySelector('.previous-arrow');
 const nextButton = document.querySelector('.next-arrow');
 let index = 0;

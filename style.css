@@ -149,7 +149,13 @@ ul {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+}
+.top__left__bottom {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
 }
 .top__left__heading {
   color: #fff6ef;
@@ -273,11 +279,11 @@ ul {
   margin-bottom: 50px;
   display: flex;
   flex-direction: row;
+  gap: 60px;
 }
 .piercing__right {
-  width: 43%;
+  width: 45%;
   margin-top: 20px;
-  margin-left: 100px;
 }
 .piercing__img {
   width: 100%;
@@ -306,18 +312,20 @@ ul {
   width: 22%;
   color: #8E623C;
 }
-.piercing__price__two {
-  margin-top: 32px;
-  margin-bottom: 32px;
+.piercing__price__six {
+  margin-top: 48px;
+  margin-bottom: 75px;
 }
-.piercing__price__four {
-  margin-top: 79px;
-  margin-bottom: 79px;
+.piercing__price__seven {
+  margin-bottom: 52px;
 }
-.piercing__description__one {
+.piercing__description__six {
   margin-top: 15px;
 }
-.piercing__description__two {
+.piercing__description__eight {
+  margin-bottom: 15px;
+}
+.piercing__description__ten {
   margin-bottom: 15px;
 }
 
@@ -364,19 +372,15 @@ ul {
   gap: 70px;
 }
 .hair-extension__price {
+  margin-top: 15px;
   color: #8E623C;
   width: 40%;
 }
-.hair-extension__price__third {
-  padding-top: 15px;
+.hair-extension__price__two {
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
-.hair-extension__price__fourth {
-  padding-top: 20px;
-}
-.hair-extension__price li {
-  margin-top: 15px;
-}
-.hair-extension__description li {
+.hair-extension__description__three {
   margin-top: 15px;
 }
 
@@ -432,7 +436,7 @@ ul {
 }
 .tatoo__bottom {
   font-size: 18px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .tatoo__description {
   font-size: 18px;
@@ -487,14 +491,20 @@ ul {
   color: #fff6ef;
 }
 .hair-lamination__info {
+  margin-top: 20px;
   display: flex;
-  gap: 70px;
+  gap: 50px;
 }
 .hair-lamination__price {
-  padding-top: 20px;
   color: #8E623C;
-  width: 40%;
-  line-height: 60px;
+  width: 20%;
+}
+.hair-lamination__price__one {
+  margin-top: 22px;
+  margin-bottom: 65px;
+}
+.hair-lamination__description__two {
+  margin-bottom: 15px;
 }
 
 .teaching {
@@ -534,22 +544,36 @@ ul {
 }
 
 .feedback {
-  margin-top: 100px;
+  margin-top: 50px;
+  position: relative;
 }
 .feedback__title {
   font-family: "American TextC";
-  font-size: 60px;
+  font-size: 50px;
   color: #8E623C;
+  margin-bottom: 30px;
+}
+.feedback__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .feedback__img {
-  width: 100%;
+  width: 40%;
 }
-.feedback__imgs {
-  margin-top: 50px;
-  width: 100%;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(4, 300px);
+
+.previous-arrow2 {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 20%;
+}
+
+.next-arrow2 {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 20%;
 }
 
 .logo__mooving {
@@ -823,6 +847,9 @@ ul {
   .sign-up__bottom__text {
     font-size: 38px;
   }
+  .piercing {
+    gap: 10px;
+  }
   .piercing__right {
     width: 50%;
     margin-left: 0px;
@@ -839,13 +866,13 @@ ul {
   .piercing__price {
     width: 24%;
   }
-  .piercing__price__two {
-    margin-top: 25px;
+  .piercing__price__six {
+    margin-top: 35px;
     margin-bottom: 25px;
   }
-  .piercing__price__four {
+  .piercing__price__seven {
     margin-top: 55px;
-    margin-bottom: 53px;
+    margin-bottom: 33px;
   }
   .hair-extension {
     gap: 20px;
@@ -866,13 +893,12 @@ ul {
     gap: 30px;
   }
   .hair-extension__price {
+    margin-top: 10px;
     width: 45%;
   }
-  .hair-extension__price__third {
-    padding-top: 10px;
-  }
-  .hair-extension__price__fourth {
-    padding-top: 10px;
+  .hair-extension__price__two {
+    margin-top: 33px;
+    margin-bottom: 10px;
   }
   .swiper {
     padding-bottom: 55px !important;
@@ -890,7 +916,7 @@ ul {
   }
   .tatoo {
     margin-top: 0px;
-    gap: 40px;
+    gap: 10px;
   }
   .tatoo__bottom {
     font-size: 16px;
@@ -903,15 +929,21 @@ ul {
     height: 500px;
   }
   .tatoo__left {
-    width: 60%;
+    width: 50%;
     padding-top: 30px;
   }
   .tatoo__slider {
-    margin-left: 0px;
+    margin-left: 20px;
+  }
+  .tatoo__info {
+    gap: 20px;
+  }
+  .tatoo__price {
+    width: 24%;
   }
   .previous-arrow {
     top: 200px;
-    left: 0px;
+    left: 20px;
   }
   .next-arrow {
     top: 200px;
@@ -935,9 +967,11 @@ ul {
     gap: 30px;
   }
   .hair-lamination__price {
-    padding-top: 8px;
     width: 22%;
-    line-height: 34px;
+  }
+  .hair-lamination__price__one {
+    margin-top: 13px;
+    margin-bottom: 30px;
   }
   .teaching {
     margin-top: 30px;
@@ -947,11 +981,11 @@ ul {
     font-size: 17px;
   }
   .teaching__title {
-    font-size: 50px;
+    font-size: 48px;
   }
   .teaching__info {
-    margin-top: 10px;
-    left: 70px;
+    margin-top: 20px;
+    left: 30px;
   }
   .feedback {
     margin-top: 0px;
@@ -1056,7 +1090,7 @@ ul {
     align-items: center;
   }
   .top__left__heading {
-    font-size: 50px;
+    font-size: 52px;
   }
   .top__left__button {
     font-size: 25px;
@@ -1127,6 +1161,7 @@ ul {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
   .piercing__right {
     width: 100%;
@@ -1149,13 +1184,12 @@ ul {
   .piercing__price {
     width: 35%;
   }
-  .piercing__price__two {
-    margin-top: 25px;
-    margin-bottom: 27px;
+  .piercing__price__six {
+    margin-top: 38px;
+    margin-bottom: 55px;
   }
-  .piercing__price__four {
-    margin-top: 58px;
-    margin-bottom: 57px;
+  .piercing__price__seven {
+    margin-bottom: 35px;
   }
   .hair-extension {
     margin-top: 0px;
@@ -1172,13 +1206,12 @@ ul {
     gap: 20px;
   }
   .hair-extension__price {
+    margin-top: 10px;
     width: 44%;
   }
-  .hair-extension__price__third {
-    padding-top: 10px;
-  }
-  .hair-extension__price__fourth {
-    padding-top: 10px;
+  .hair-extension__price__two {
+    margin-top: 35px;
+    margin-bottom: 13px;
   }
   .swiper {
     margin-top: 30px;
@@ -1267,13 +1300,13 @@ ul {
     gap: 30px;
   }
   .hair-lamination__price {
-    padding-top: 10px;
+    margin-top: 0px;
     color: #8E623C;
     width: 25%;
-    line-height: 25px;
   }
-  .hair-lamination__price li {
-    margin-top: 15px;
+  .hair-lamination__price__one {
+    margin-top: 13px;
+    margin-bottom: 45px;
   }
   .teaching {
     margin-top: 50px;
@@ -1286,23 +1319,38 @@ ul {
     gap: 10px;
   }
   .teaching__title {
-    font-size: 40px;
+    font-size: 33px;
+    width: 80%;
   }
   .teaching__info {
     margin-top: 0px;
     left: 10px;
   }
   .feedback {
-    margin-top: 10px;
+    margin-top: 50px;
+    position: relative;
   }
   .feedback__title {
+    font-family: "American TextC";
     font-size: 50px;
+    color: #8E623C;
+    margin-bottom: 30px;
   }
-  .feedback__imgs {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    gap: 20px;
-    grid-template-columns: repeat(2, 47%);
+  .feedback__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback__img {
+    width: 100%;
+  }
+  .previous-arrow2 {
+    top: 60%;
+    left: 0%;
+  }
+  .next-arrow2 {
+    top: 60%;
+    right: 0%;
   }
   .logo__mooving {
     margin-top: 50px;

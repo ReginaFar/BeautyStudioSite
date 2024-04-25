@@ -139,7 +139,13 @@ ul{
     &__left{
         width: 50%;
         @include columnFlex();
-        margin-top: 30px;
+        &__bottom{
+            color:$colorWhiteText;
+            font-family: $fontSmall;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+        }
         &__heading{
             color: $colorLightText;
             font-family: $fontBig;    
@@ -265,10 +271,10 @@ ul{
 .piercing{
     margin-bottom: 50px;
     @include rowFlex();
+    gap:60px;
     &__right{
-        width: 43%;
+        width: 45%;
         margin-top: 20px;
-        margin-left: 100px;
     }
     &__img{  
         width:100%;
@@ -296,20 +302,22 @@ ul{
     &__price{
         width:22%;
         color:$colorBrownText;
-        &__two{
-            margin-top: 32px;
-            margin-bottom: 32px;
+        &__six{
+            margin-top: 48px;
+            margin-bottom: 75px;
         }
-        &__four{
-            margin-top: 79px;
-            margin-bottom: 79px;
+        &__seven{
+            margin-bottom: 52px;
         }
     }
     &__description{
-        &__one{
+        &__six{
             margin-top: 15px;
         }
-        &__two{
+        &__eight{
+            margin-bottom: 15px;
+        }
+        &__ten{
             margin-bottom: 15px;
         }
     }
@@ -356,20 +364,18 @@ ul{
         gap:70px;
     }
     &__price{
+        margin-top: 15px;
         color:$colorBrownText;
         width:40%;
-        &__third{
-            padding-top: 15px;
-        }
-        &__fourth{
-            padding-top: 20px;
+        &__two{
+            margin-top: 45px;
+            margin-bottom: 20px;
         }
     }
-    &__price li{
-        margin-top: 15px;
-    }
-    &__description li{
-        margin-top: 15px;
+    &__description{
+        &__three{
+            margin-top: 15px;
+        }
     }
 }
 .hair-slider{
@@ -417,7 +423,7 @@ ul{
     @include rowFlex();
     &__bottom{
         font-size: 18px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     &__description{
         font-size: 18px;
@@ -469,14 +475,22 @@ ul{
         color:$colorLightText;
     }
     &__info{
+        margin-top: 20px;
         display: flex;
-        gap:70px;
+        gap:50px;
     }
     &__price{
-        padding-top: 20px;
         color: $colorBrownText;
-        width:40%;
-        line-height: 60px;
+        width:20%;
+        &__one{
+            margin-top: 22px;
+            margin-bottom: 65px;
+        }
+    }
+    &__description{
+        &__two{
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -516,22 +530,34 @@ ul{
 }
 
 .feedback{
-    margin-top:100px;
+    margin-top: 50px;
+    position: relative;
     &__title{
         font-family: $fontBig;
-        font-size: 60px;
+        font-size: 50px;
         color:$colorBrownText;
+        margin-bottom: 30px;
+    }
+    &__slider{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__img{
-        width:100%;
-    }
-    &__imgs{
-        margin-top: 50px;
-        width:100%;
-        display: grid;
-        gap:30px;
-        grid-template-columns: repeat(4,300px);
-    }
+        width:40%;
+    } 
+}
+.previous-arrow2{
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    left:20%;
+}
+.next-arrow2{
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    right:20%;
 }
 
 .logo__mooving{
@@ -811,6 +837,7 @@ ul{
     }
 
     .piercing{
+        gap:10px;
         &__right{
             width: 50%;
             margin-left: 0px;
@@ -826,13 +853,13 @@ ul{
         }
         &__price{
             width:24%;
-            &__two{
-                margin-top: 25px;
+            &__six{
+                margin-top: 35px;
                 margin-bottom: 25px;
             }
-            &__four{
+            &__seven{
                 margin-top: 55px;
-                margin-bottom: 53px;
+                margin-bottom: 33px;
             }
         }
     }
@@ -855,16 +882,14 @@ ul{
             gap:30px;
         }
         &__price{
+            margin-top: 10px;
             width:45%;
-            &__third{
-                padding-top: 10px;
-            }
-            &__fourth{
-                padding-top: 10px;
+            &__two{
+                margin-top: 33px;
+                margin-bottom: 10px;
             }
         }
     }
-
     .swiper {
         padding-bottom: 55px !important;
         height: 250px;
@@ -882,7 +907,7 @@ ul{
 
     .tatoo{
         margin-top: 0px;
-        gap:40px;
+        gap:10px;
         &__bottom{
             font-size: 16px;
         }
@@ -894,17 +919,23 @@ ul{
             height:500px;
         }
         &__left{
-            width:60%;
+            width:50%;
             padding-top: 30px;
         }
         &__slider{
-            margin-left: 0px;
+            margin-left: 20px;
+        }
+        &__info{
+            gap:20px;
+        }
+        &__price{
+            width:24%;
         }
     }
 
     .previous-arrow{
         top:200px;
-        left:0px;
+        left:20px;
     }
 
     .next-arrow{
@@ -929,9 +960,11 @@ ul{
             gap:30px;
         }
         &__price{
-            padding-top: 8px;
             width:22%;
-            line-height: 34px;
+            &__one{
+                margin-top: 13px;
+                margin-bottom: 30px;
+            }
         }
       
     }
@@ -943,11 +976,11 @@ ul{
             font-size: 17px;
         }
         &__title{
-            font-size: 50px;
+            font-size: 48px;
         }
         &__info{
-            margin-top: 10px;
-            left:70px;
+            margin-top: 20px;
+            left:30px;
         }
     }
     
@@ -1062,7 +1095,7 @@ ul{
             text-align: center;
             align-items: center;
             &__heading{   
-                font-size: 50px;          
+                font-size: 52px;          
             }
             &__button{
                 font-size: 25px;
@@ -1140,6 +1173,7 @@ ul{
     .piercing{
         margin-bottom: 30px;
         @include columnFlex();
+        gap:20px;
         &__right{
             width: 100%;
             margin-top: 30px;
@@ -1160,13 +1194,12 @@ ul{
         }
         &__price{
             width:35%;
-            &__two{
-                margin-top: 25px;
-                margin-bottom: 27px;
+            &__six{
+                margin-top: 38px;
+                margin-bottom: 55px;
             }
-            &__four{
-                margin-top: 58px;
-                margin-bottom: 57px;
+            &__seven{
+                margin-bottom: 35px;
             }
         }
     }
@@ -1185,12 +1218,11 @@ ul{
             gap:20px;
         }
         &__price{
+            margin-top: 10px;
             width:44%;
-            &__third{
-                padding-top: 10px;
-            }
-            &__fourth{
-                padding-top: 10px;
+            &__two{
+                margin-top: 35px;
+                margin-bottom: 13px;
             }
         }
     }
@@ -1282,13 +1314,13 @@ ul{
             gap:30px;
         }
         &__price{
-            padding-top: 10px;
+            margin-top: 0px;
             color: $colorBrownText;
             width:25%;
-            line-height:25px;
-        }
-        &__price li{
-            margin-top: 15px;
+            &__one{
+                margin-top: 13px;
+                margin-bottom: 45px;
+            }
         }
     }
 
@@ -1302,7 +1334,8 @@ ul{
             gap:10px;
         }
         &__title{
-            font-size: 40px;
+            font-size: 33px;
+            width:80%;
         }
         &__info{
             margin-top: 0px;
@@ -1311,16 +1344,30 @@ ul{
     }
 
     .feedback{
-    margin-top:10px;
-    &__title{
-        font-size: 50px;
+        margin-top: 50px;
+        position: relative;
+        &__title{
+            font-family: $fontBig;
+            font-size: 50px;
+            color:$colorBrownText;
+            margin-bottom: 30px;
+        }
+        &__slider{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__img{
+            width:100%;
+        } 
     }
-    &__imgs{
-        margin-top: 30px;
-        margin-bottom: 20px;
-        gap:20px;
-        grid-template-columns: repeat(2,47%);
+    .previous-arrow2{
+        top:60%;
+        left:0%;
     }
+    .next-arrow2{
+        top:60%;
+        right:0%;
     }
 
     .logo__mooving{
