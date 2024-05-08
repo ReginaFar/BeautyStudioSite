@@ -28,7 +28,7 @@
 }
 
 body{
-    background:url('../img/background.jpg')
+    background: url("../img/background.jpg");
 }
 
 html{
@@ -1029,7 +1029,7 @@ ul{
     } 
 }
 
-@media (min-width:375px) and (max-width:767px) {
+@media (min-width:320px) and (max-width:767px) {
     .center{
         padding: 3% 2% 0;
     }
@@ -1194,11 +1194,17 @@ ul{
         &__price{
             width:35%;
             &__four{
-                margin-top: 70px;
-                margin-bottom: 70px;
+                margin-top: 60px;
+                margin-bottom: 60px;
             }
             &__five{
-                margin-bottom: 35px;
+                margin-bottom: 0px;
+                margin-top: 17px;
+            }
+        }
+        &__description{
+            &__ten{
+                margin-bottom: 0px;
             }
         }
     }

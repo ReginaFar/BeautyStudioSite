@@ -1026,7 +1026,7 @@ ul {
     height: 350px;
   }
 }
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .center {
     padding: 3% 2% 0;
   }
@@ -1184,11 +1184,15 @@ ul {
     width: 35%;
   }
   .piercing__price__four {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
   .piercing__price__five {
-    margin-bottom: 35px;
+    margin-bottom: 0px;
+    margin-top: 17px;
+  }
+  .piercing__description__ten {
+    margin-bottom: 0px;
   }
   .hair-extension {
     margin-top: 0px;
