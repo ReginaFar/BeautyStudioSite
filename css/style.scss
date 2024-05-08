@@ -1,6 +1,6 @@
 @import "https://fonts.fontstorage.com/import/americantext.css";
+@import "mixins";
 @import 'vars';
-@import 'mixins';
 
 @keyframes glowing {
     0% { background-position: 0 0; }
@@ -28,7 +28,7 @@
 }
 
 body{
-    background: url(img/background.jpg);
+    background-image:url('/img/background.jpg')
 }
 
 html{
@@ -1194,8 +1194,8 @@ ul{
         &__price{
             width:35%;
             &__four{
-                margin-top: 60px;
-                margin-bottom: 78px;
+                margin-top: 70px;
+                margin-bottom: 70px;
             }
             &__five{
                 margin-bottom: 35px;

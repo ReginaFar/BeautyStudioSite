@@ -32,7 +32,7 @@
 }
 
 body {
-  background: url(img/background.jpg);
+  background-image: url("/img/background.jpg");
 }
 
 html {
@@ -134,7 +134,7 @@ ul {
 }
 .dropdown__content a:hover {
   background-color: #ddd;
-  color: #000;
+  color: black;
 }
 
 .dropdown:hover .dropdown__content {
@@ -536,7 +536,7 @@ ul {
   left: 250px;
 }
 .teaching__line {
-  border-left: #000 solid 3px;
+  border-left: black solid 3px;
   height: auto;
 }
 .teaching__button {
@@ -691,7 +691,7 @@ ul {
 }
 .sign-up__window__title {
   font-family: "American TextC";
-  color: #000;
+  color: black;
   font-size: 45px;
   margin-left: 200px;
   margin-right: 140px;
@@ -718,8 +718,8 @@ ul {
 .sign-up__window__button {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 18px;
-  color: #000;
-  border: #000 solid 1px;
+  color: black;
+  border: black solid 1px;
   width: 300px;
   height: 50px;
   display: flex;
@@ -748,7 +748,7 @@ ul {
 }
 .sign-up__bottom__text {
   font-family: "American TextC";
-  color: #000;
+  color: black;
   font-size: 45px;
 }
 .sign-up__bottom__logo {
@@ -1184,8 +1184,8 @@ ul {
     width: 35%;
   }
   .piercing__price__four {
-    margin-top: 60px;
-    margin-bottom: 78px;
+    margin-top: 70px;
+    margin-bottom: 70px;
   }
   .piercing__price__five {
     margin-bottom: 35px;
