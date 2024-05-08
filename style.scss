@@ -302,16 +302,16 @@ ul{
     &__price{
         width:22%;
         color:$colorBrownText;
-        &__six{
-            margin-top: 48px;
-            margin-bottom: 75px;
+        &__four{
+            margin-top: 85px;
+            margin-bottom: 110px;
         }
-        &__seven{
-            margin-bottom: 52px;
+        &__five{
+            margin-bottom: 45px;
         }
     }
     &__description{
-        &__six{
+        &__four{
             margin-top: 15px;
         }
         &__eight{
@@ -853,13 +853,12 @@ ul{
         }
         &__price{
             width:24%;
-            &__six{
-                margin-top: 35px;
-                margin-bottom: 25px;
-            }
-            &__seven{
+            &__four{
                 margin-top: 55px;
-                margin-bottom: 33px;
+                margin-bottom: 70px;
+            }
+            &__five{
+                margin-bottom: 38px;
             }
         }
     }
@@ -1194,11 +1193,11 @@ ul{
         }
         &__price{
             width:35%;
-            &__six{
-                margin-top: 38px;
-                margin-bottom: 55px;
+            &__four{
+                margin-top: 60px;
+                margin-bottom: 78px;
             }
-            &__seven{
+            &__five{
                 margin-bottom: 35px;
             }
         }

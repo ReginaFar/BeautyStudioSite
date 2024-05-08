@@ -312,14 +312,14 @@ ul {
   width: 22%;
   color: #8E623C;
 }
-.piercing__price__six {
-  margin-top: 48px;
-  margin-bottom: 75px;
+.piercing__price__four {
+  margin-top: 85px;
+  margin-bottom: 110px;
 }
-.piercing__price__seven {
-  margin-bottom: 52px;
+.piercing__price__five {
+  margin-bottom: 45px;
 }
-.piercing__description__six {
+.piercing__description__four {
   margin-top: 15px;
 }
 .piercing__description__eight {
@@ -866,13 +866,12 @@ ul {
   .piercing__price {
     width: 24%;
   }
-  .piercing__price__six {
-    margin-top: 35px;
-    margin-bottom: 25px;
-  }
-  .piercing__price__seven {
+  .piercing__price__four {
     margin-top: 55px;
-    margin-bottom: 33px;
+    margin-bottom: 70px;
+  }
+  .piercing__price__five {
+    margin-bottom: 38px;
   }
   .hair-extension {
     gap: 20px;
@@ -1184,11 +1183,11 @@ ul {
   .piercing__price {
     width: 35%;
   }
-  .piercing__price__six {
-    margin-top: 38px;
-    margin-bottom: 55px;
+  .piercing__price__four {
+    margin-top: 60px;
+    margin-bottom: 78px;
   }
-  .piercing__price__seven {
+  .piercing__price__five {
     margin-bottom: 35px;
   }
   .hair-extension {
