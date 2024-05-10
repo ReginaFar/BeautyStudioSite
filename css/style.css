@@ -1165,7 +1165,8 @@ ul {
     margin-bottom: 20px;
   }
   .piercing__price {
-    width: 20%;
+    width: 28%;
+    line-height: 1.4;
   }
   .piercing__price__eight {
     margin-bottom: 22px;
