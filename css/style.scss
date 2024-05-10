@@ -1175,10 +1175,13 @@ ul{
         }
         &__price{
             width:28%;
-            line-height: 1.38;
+            line-height: 1.4;
             &__eight{
                 margin-bottom: 22px;
             }
+        }
+        &__description{
+            line-height: 1.3;
         }
     }
 
