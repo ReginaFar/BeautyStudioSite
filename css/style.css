@@ -1165,6 +1165,381 @@ ul {
     margin-bottom: 20px;
   }
   .piercing__price {
+    width: 20%;
+  }
+  .piercing__price__eight {
+    margin-bottom: 22px;
+  }
+  .hair-extension {
+    margin-top: 0px;
+    gap: 0px;
+  }
+  .hair-extension__left {
+    display: none;
+  }
+  .hair-extension__right {
+    font-size: 16px;
+  }
+  .hair-extension__info {
+    margin-top: 0px;
+    gap: 20px;
+  }
+  .hair-extension__price {
+    margin-top: 10px;
+    width: 44%;
+  }
+  .hair-extension__price__two {
+    margin-top: 35px;
+    margin-bottom: 13px;
+  }
+  .swiper {
+    margin-top: 30px;
+    height: 250px;
+  }
+  .swiper .swiper-wrapper {
+    align-items: center;
+  }
+  .swiper .swiper-slide {
+    border-radius: 5px;
+    height: 100px !important;
+    transition: 0.2s;
+    margin-right: 10px !important;
+    margin-left: 22px !important;
+  }
+  .swiper .swiper-slide.active {
+    height: 250px !important;
+    width: 250px !important;
+  }
+  .swiper .pagination {
+    margin-left: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 100;
+  }
+  .swiper .pagination span {
+    font-size: 0;
+    opacity: 1;
+    margin: 0px 6px !important;
+    border: 1px solid #FFF;
+  }
+  .swiper .pagination span.swiper-pagination-bullet-active {
+    background-color: transparent;
+    transform: scale(1.5);
+  }
+  .tatoo {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tatoo__bottom {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .tatoo__description {
+    font-size: 16px;
+  }
+  .tatoo__right {
+    width: 100%;
+    height: 100%;
+  }
+  .tatoo__left {
+    padding-top: 0px;
+  }
+  .tatoo__slider {
+    margin-left: 0px;
+  }
+  .tatoo__info {
+    gap: 30px;
+  }
+  .tatoo__price {
+    width: 20%;
+  }
+  .previous-arrow {
+    top: 230px;
+    left: 0px;
+  }
+  .next-arrow {
+    top: 230px;
+    right: 0px;
+  }
+  .hair-lamination {
+    margin-top: 0px;
+    gap: 0px;
+  }
+  .hair-lamination__left {
+    display: none;
+  }
+  .hair-lamination__right {
+    font-size: 16px;
+  }
+  .hair-lamination__info {
+    gap: 30px;
+  }
+  .hair-lamination__price {
+    margin-top: 0px;
+    color: #8E623C;
+    width: 25%;
+  }
+  .hair-lamination__price__one {
+    margin-top: 13px;
+    margin-bottom: 45px;
+  }
+  .teaching {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .teaching__description {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .teaching__title {
+    font-size: 33px;
+    width: 80%;
+  }
+  .teaching__info {
+    margin-top: 0px;
+    left: 10px;
+  }
+  .feedback {
+    margin-top: 50px;
+    position: relative;
+  }
+  .feedback__title {
+    font-family: "American TextC";
+    font-size: 50px;
+    color: #8E623C;
+    margin-bottom: 30px;
+  }
+  .feedback__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback__img {
+    width: 100%;
+  }
+  .previous-arrow2 {
+    top: 60%;
+    left: 0%;
+  }
+  .next-arrow2 {
+    top: 60%;
+    right: 0%;
+  }
+  .logo__mooving {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .logo__mooving__svg {
+    width: 200px;
+    margin-right: 100px;
+  }
+  .studio__photo {
+    display: flex;
+    flex-direction: column;
+  }
+  .studio__photo__1 {
+    width: 100%;
+  }
+  .studio__photo__2 {
+    width: 100%;
+  }
+  .studio__photo__3 {
+    width: 100%;
+  }
+  .studio__photo__4 {
+    width: 100%;
+  }
+  .studio__photo__5 {
+    width: 100%;
+  }
+  .footer {
+    min-height: 530px;
+    padding-top: 50px;
+  }
+  .footer__box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer__left__title {
+    margin-bottom: 20px;
+  }
+  .footer__left__contacts {
+    font-size: 16px;
+  }
+  .footer__left__svg {
+    margin-top: 30px;
+  }
+  .footer__bottom {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .footer__right__map__iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .center {
+    padding: 3% 2% 0;
+  }
+  .header {
+    height: 80px;
+  }
+  .header__menu {
+    margin-top: 0px;
+    height: 70px;
+  }
+  .header__menu__left {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .header__menu__logo {
+    width: 90px;
+  }
+  .header__menu__center {
+    padding-right: 0px;
+  }
+  .header__menu__right {
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .header__menu__right :nth-child(3) {
+    display: none;
+  }
+  .header__menu__logovk svg {
+    display: none;
+  }
+  .header__menu__nav {
+    display: none;
+  }
+  .header__menu__contacts {
+    text-align: center;
+  }
+  .dropdown {
+    padding-bottom: 0px;
+  }
+  .dropdown__btn {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  .dropdown__btn svg {
+    height: 12px;
+  }
+  .dropdown__content {
+    font-size: 12px;
+    min-width: 130px;
+  }
+  .top {
+    flex-direction: column;
+  }
+  .top__left {
+    margin-bottom: 30px;
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    align-items: center;
+  }
+  .top__left__heading {
+    font-size: 52px;
+  }
+  .top__left__button {
+    font-size: 25px;
+    margin-top: 20px;
+    width: 200px;
+  }
+  .top__left__worktime {
+    margin-top: 20px;
+  }
+  .top__left__worktime__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .top__left__worktime__info {
+    font-size: 15px;
+  }
+  .top__right img {
+    width: 100%;
+  }
+  .main__logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main__logo__info {
+    font-size: 34px;
+  }
+  .main__logo__svg {
+    width: 150px;
+  }
+  .sign-up__window {
+    width: 320px;
+    height: 320px;
+  }
+  .sign-up__window__title {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+  .sign-up__window__close {
+    width: 30px;
+    margin-bottom: 30px;
+  }
+  .sign-up__window__buttons {
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+    height: 180px;
+  }
+  .sign-up__window__button {
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
+  }
+  .sign-up__window__link {
+    gap: 5px;
+  }
+  .sign-up__bottom {
+    margin-top: 0px;
+  }
+  .sign-up__bottom__text {
+    font-size: 30px;
+  }
+  .sign-up__bottom__logo {
+    width: 100px;
+  }
+  .piercing {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .piercing__right {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .piercing__left {
+    font-size: 16px;
+    width: 100%;
+  }
+  .piercing__left__additional {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .piercing__info {
+    gap: 35px;
+    margin-bottom: 20px;
+  }
+  .piercing__price {
     width: 28%;
   }
   .piercing__price__eight {
