@@ -300,12 +300,7 @@ ul{
         gap:50px;
     }
     &__price{
-        width:20%;
         color:$colorBrownText;
-        line-height: 1.3;
-        &__eight{
-            margin-bottom: 30px;
-        }
     }
 }
 
@@ -1174,14 +1169,10 @@ ul{
             margin-bottom: 20px;
         }
         &__price{
-            width:28%;
-            line-height: 1.3;
-            &__eight{
-                margin-bottom: 22px;
-            }
-        }
-        &__description{
-            line-height: 1.3;
+           &__five{
+            margin-top: 15px;
+            margin-bottom: 13px;
+           }
         }
     }
 
