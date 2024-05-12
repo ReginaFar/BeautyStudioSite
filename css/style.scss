@@ -241,8 +241,8 @@ ul{
 .main__logo{
     @include columnFlex();
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     overflow: hidden;
     &__info{
         font-family: $fontBig; 
@@ -269,7 +269,7 @@ ul{
 }
 
 .piercing{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @include rowFlex();
     gap:60px;
     &__right{
@@ -286,7 +286,7 @@ ul{
         width:50%;
         &__additional{
             font-size: 18px;
-            margin-top: 15px;
+            margin-top: 20px;
         }
     }
     &__title{
@@ -301,6 +301,10 @@ ul{
     }
     &__price{
         color:$colorBrownText;
+        &__five{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -319,9 +323,9 @@ ul{
 }
 
 .divide-line img{
-    width: 100%;
-    
+    width: 100%; 
 }
+
 .hair-extension{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -359,9 +363,11 @@ ul{
         }
     }
 }
+
 .hair-slider{
     @include centerFlex();
 }
+
 .swiper {
     padding-bottom: 55px !important;
     height: 350px;
@@ -399,12 +405,12 @@ ul{
 }
 
 .tatoo{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     @include rowFlex();
     &__bottom{
         font-size: 18px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
     &__description{
         font-size: 18px;
@@ -425,12 +431,14 @@ ul{
         margin-left: 50px;
     }
 }
+
 .previous-arrow{
     position: absolute;
     cursor: pointer;
     top:300px;
     left:0px;
 }
+
 .next-arrow{
     position: absolute;
     cursor: pointer;
@@ -465,7 +473,7 @@ ul{
         width:20%;
         &__one{
             margin-top: 22px;
-            margin-bottom: 65px;
+            margin-bottom: 60px;
         }
     }
     &__description{
@@ -476,7 +484,7 @@ ul{
 }
 
 .teaching{
-    margin-top:100px;
+    margin-top:50px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -518,6 +526,7 @@ ul{
         font-size: 50px;
         color:$colorBrownText;
         margin-bottom: 30px;
+        text-align: center;
     }
     &__slider{
         display: flex;
@@ -528,12 +537,14 @@ ul{
         width:40%;
     } 
 }
+
 .previous-arrow2{
     position: absolute;
     cursor: pointer;
     top:50%;
     left:20%;
 }
+
 .next-arrow2{
     position: absolute;
     cursor: pointer;
@@ -542,9 +553,9 @@ ul{
 }
 
 .logo__mooving{
-    margin-top: 100px;
+    margin-top:70px;
     overflow: hidden;
-    padding-bottom: 100px;
+    margin-bottom: 70px;
     width: 100%;
     white-space: nowrap;
     display: block;
@@ -581,7 +592,7 @@ ul{
 
 .footer{
     min-height:530px;
-    padding-top: 100px;
+    margin-top: 70px;
     &__box{
         @include rowFlex();
         gap:30%;
@@ -723,6 +734,7 @@ ul{
     .center{
         padding: 3% 2% 0;
     }
+    
     .header{
         height:100px;
         &__menu{
@@ -744,7 +756,6 @@ ul{
             &__contacts{
                 margin-left: 5px;
                 text-align: center;
-               
             }
             &__logovk svg{
                 margin:5%;
@@ -755,6 +766,7 @@ ul{
             }
         }
     }
+
     .dropdown{
         &__btn{
             padding-top: 11px;
@@ -767,7 +779,7 @@ ul{
             min-width: 130px;
         }
     }
- 
+
     .top{
         &__left{
             width: 45%;
@@ -834,8 +846,9 @@ ul{
         }
         &__price{
             width:23%;
-            &__eight{
-                margin-bottom: 17px;
+            &__five{
+                margin-top: 13px;
+                margin-bottom: 13px;
             }
         }
     }
@@ -866,6 +879,7 @@ ul{
             }
         }
     }
+
     .swiper {
         padding-bottom: 55px !important;
         height: 250px;
@@ -974,8 +988,7 @@ ul{
     }
 
     .logo__mooving{
-        margin-top: 50px;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     .footer{
@@ -1002,7 +1015,6 @@ ul{
                 }
             }
         }
-      
     } 
 }
 
@@ -1050,8 +1062,7 @@ ul{
         padding-bottom: 0px;
         &__btn{
             padding-top: 5px;
-            font-size: 14px;
-            
+            font-size: 14px; 
         }
         &__btn svg{
            height: 12px;
@@ -1091,8 +1102,7 @@ ul{
         }
         &__right img{
             width:100%;
-        }
-        
+        }    
     }
 
     .main__logo{
@@ -1159,7 +1169,7 @@ ul{
             font-size: 16px;
             width:100%;
             &__additional{
-                font-size: 16px;
+                font-size: 13px;
                 margin-top: 15px;
                 margin-bottom: 10px;
             }
@@ -1239,11 +1249,11 @@ ul{
         margin-bottom: 10px;
         @include columnFlex();
         &__bottom{
-            font-size: 16px;
-            margin-top: 50px;
+            font-size: 13px;
+            margin-top: 20px;
         }
         &__description{
-            font-size: 16px;
+            font-size: 13px;
         }
         &__right{
             width:100%;
@@ -1303,11 +1313,9 @@ ul{
             font-size: 16px;
             font-weight: 600;
             margin-top: 10px;
-            gap:10px;
         }
         &__title{
             font-size: 33px;
-            width:80%;
         }
         &__info{
             margin-top: 0px;
@@ -1316,7 +1324,7 @@ ul{
     }
 
     .feedback{
-        margin-top: 50px;
+        margin-top: 40px;
         position: relative;
         &__title{
             font-family: $fontBig;
@@ -1333,10 +1341,12 @@ ul{
             width:100%;
         } 
     }
+
     .previous-arrow2{
         top:60%;
         left:0%;
     }
+
     .next-arrow2{
         top:60%;
         right:0%;
@@ -1496,7 +1506,7 @@ ul{
         padding-top: 30px;
         padding-bottom: 30px;
         &__info{
-            font-size: 34px;
+            font-size: 30px;
         }
         &__svg{
             width:150px;
@@ -1553,10 +1563,10 @@ ul{
             margin-left: 0px;
         }
         &__left{
-            font-size: 16px;
+            font-size: 15px;
             width:100%;
             &__additional{
-                font-size: 16px;
+                font-size: 13px;
                 margin-top: 15px;
                 margin-bottom: 10px;
             }
@@ -1566,9 +1576,9 @@ ul{
             margin-bottom: 20px;
         }
         &__price{
-            width:28%;
-            &__eight{
-                margin-bottom: 22px;
+            &__five{
+                margin-top: 15px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -1590,8 +1600,13 @@ ul{
             margin-top: 10px;
             width:44%;
             &__two{
-                margin-top: 35px;
+                margin-top: 28px;
                 margin-bottom: 13px;
+            }
+        }
+        &__description{
+            &__three{
+                margin-bottom: 15px;
             }
         }
     }
@@ -1636,11 +1651,11 @@ ul{
         margin-bottom: 10px;
         @include columnFlex();
         &__bottom{
-            font-size: 16px;
-            margin-top: 50px;
+            font-size: 13px;
+            margin-top: 20px;
         }
         &__description{
-            font-size: 16px;
+            font-size: 13px;
         }
         &__right{
             width:100%;
@@ -1655,18 +1670,15 @@ ul{
         &__info{
             gap:30px;
         }
-        &__price{
-            width:20%;
-        }
     }
 
     .previous-arrow{
-        top:230px;
+        top:40%;
         left:0px;
     }
 
     .next-arrow{
-        top:230px;
+        top:40%;
         right:0px;
     }
 
@@ -1680,31 +1692,30 @@ ul{
             font-size: 16px;
         }
         &__info{
-            gap:30px;
+            gap:20px;
         }
         &__price{
+            width:29%;
             margin-top: 0px;
             color: $colorBrownText;
-            width:25%;
             &__one{
-                margin-top: 13px;
-                margin-bottom: 45px;
+                margin-top: 20px;
+                margin-bottom: 60px;
             }
         }
     }
 
     .teaching{
         margin-top:50px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         &__description{
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             margin-top: 10px;
             gap:10px;
         }
         &__title{
-            font-size: 33px;
-            width:80%;
+            font-size: 30px;
         }
         &__info{
             margin-top: 0px;
@@ -1713,7 +1724,7 @@ ul{
     }
 
     .feedback{
-        margin-top: 50px;
+        margin-top: 40px;
         position: relative;
         &__title{
             font-family: $fontBig;
@@ -1730,10 +1741,12 @@ ul{
             width:100%;
         } 
     }
+
     .previous-arrow2{
         top:60%;
         left:0%;
     }
+
     .next-arrow2{
         top:60%;
         right:0%;
@@ -1800,5 +1813,3 @@ ul{
     }
     }
 }
-  
-
